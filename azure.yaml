@@ -1,0 +1,11 @@
+name: zava-storefront
+metadata:
+  template: zava-storefront
+infra:
+  provider: bicep
+  path: infra
+services:
+  web:
+    project: ./src
+    language: csharp
+    host: appservice
